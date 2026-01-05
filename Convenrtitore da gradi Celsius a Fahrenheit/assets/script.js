@@ -1,7 +1,10 @@
 let celsius;
 let faharenheit;
 
-celsius = 20;
+celsius = prompt("Inserisci la temperatura in gradi Celsius:");
 faharenheit = celsius * 1.8 + 32;
 
-console.log(`${celsius} gradi Celsius sono ${faharenheit} gradi Fahrenheit.`);
+let output = `${celsius} gradi Celsius sono ${faharenheit} gradi Fahrenheit.`;
+console.log(output);
+
+document.getElementById("output").innerHTML = output;
